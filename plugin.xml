@@ -1,0 +1,36 @@
+<plugin name='quzmon' version='0.1' grailsVersion='2.2 &gt; *'>
+  <author>Your name</author>
+  <title>Quzmon Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/quzmon</documentation>
+  <type>QuzmonGrailsPlugin</type>
+  <resources>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.OperationController</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.ParameterController</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.TraitementController</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.Operation</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.Parameter</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.Traitement</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.SchedulerJob</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.NotificationService</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.OperationService</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.SchedulerService</resource>
+    <resource>com.sofrecom.sirhus.plugins.quzmon.TraitementService</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='quartz' version='1.0-RC9' />
+    </compile>
+    <runtime>
+      <plugin group='org.grails.plugins' name='hibernate' version='2.2.3' />
+    </runtime>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
