@@ -2,6 +2,41 @@
 import org.apache.log4j.*
 import org.apache.log4j.RollingFileAppender
 
+/*
+grails.resources.modules = {
+
+    jquery {
+
+        resource url:'js/jquery/jquery-1.9.1.js', disposition: 'head'
+    }
+    bootstrap {
+        defaultBundle 'jquery'
+        resource url:'js/bstrap/bootstrap.js', disposition: 'head'
+        resource url:'css/bstrap/css/bootstrap.css', disposition: 'head'
+        dependsOn 'jquery'
+    }
+    
+    jqueryui {
+        defaultBundle 'jquery'
+        resource url:'js/jquery-ui/jquery-ui-1.10.3.custom.js', disposition: 'head'
+        resource url:'css/jquery-ui/jquery-ui-1.10.3.custom.css', disposition: 'head'
+        dependsOn 'jquery'
+    }
+    
+    fixed {
+        resource url:'css/bstrap/css/fixedbar.css', disposition: 'head'
+        dependsOn 'bootstrap'
+    }
+
+    reponsive {
+        resource url:'css/bstrap/css/bootstrap-responsive.css', disposition: 'head'
+        dependsOn 'bootstrap'
+    }
+    
+
+}
+*/
+
 log4j = {
 
     appenders {
